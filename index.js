@@ -16,26 +16,42 @@
 
 // }
 
-const str1 = "ahauuu";
-let vowels = "aeiou";
+// const str1 = "ahauuu";
+// let vowels = "aeiou";
 
-let count = 0;
+// let count = 0;
 
-for (let i = 0; i < str1.length; i++) {
-  for (let j = 0; j < vowels.length; j++) {
+// for (let i = 0; i < str1.length; i++) {
+//   for (let j = 0; j < vowels.length; j++) {
+
+//     if (str1[i] === vowels[j]) {
+//       count = count + 2;
+//     }
+
+//   }
+
+//   if (!vowels.includes(str1[i])) {
+//     count += 1;
+//   }
+// }
+
+// console.log(count);
+
+// for (var i = 0; i < 3; i++) {
+
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 0);
+
+// }
+
+// for (let i = 0; i < 3; i++) {
+
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 0);
+
+// }
 
 
-    if (str1[i] === vowels[j]) {
-      count = count + 2;
-    }
-
-
-  }
-
-  if (!vowels.includes(str1[i])) {
-    count += 1;
-  }
-}
-
-
-console.log(count);
+// console.log(i);
