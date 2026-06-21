@@ -53,5 +53,64 @@
 
 // }
 
-
 // console.log(i);
+
+// let a = "abbadjhcbegyba";
+
+// let bolen = false;
+
+// let str = "";
+// let str1 = "";
+
+// for (let i = 0; i < a.length; i++) {
+//   str += a[i];
+// }
+
+// console.log(str);
+
+// for (let j = a.length - 1; j >= 0; j--) {
+//   str1 += a[j];
+// }
+
+// console.log(str1);
+
+// if (str == str1) {
+//   bolen = true;
+// } else {
+//   bolen = false;
+// }
+
+// console.log(bolen);
+
+const arr = [1, 2, 1, 3];
+
+// const result = [];
+
+let results = arr.filter((item, index) => {
+  if (arr.indexOf(item) == index) {
+    return item;
+  }
+});
+console.log(results);
+
+// for (let i = 0; i < arr.length; i++) {
+
+//   let match = false;
+
+//   for (let j = 0; j < result.length; j++) {
+
+//     if (arr[i] === result[j]) {
+
+//       match = true;
+
+//       break;
+//     }
+
+//   }
+
+//   if (!match) {
+//     result.push(arr[i]);
+//   }
+// }
+
+// console.log(result);
