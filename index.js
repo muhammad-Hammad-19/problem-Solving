@@ -82,16 +82,16 @@
 
 // console.log(bolen);
 
-const arr = [1, 2, 1, 3];
+// const arr = [1, 2, 1, 3];
 
 // const result = [];
 
-let results = arr.filter((item, index) => {
-  if (arr.indexOf(item) == index) {
-    return item;
-  }
-});
-console.log(results);
+// let results = arr.filter((item, index) => {
+//   if (arr.indexOf(item) == index) {
+//     return item;
+//   }
+// });
+// console.log(results);
 
 // for (let i = 0; i < arr.length; i++) {
 
@@ -114,3 +114,29 @@ console.log(results);
 // }
 
 // console.log(result);
+
+//  1 logic complete
+
+// const duplicate = (arr) => {
+//   const result = arr.filter((item, index) => {
+//     if (arr.indexOf(item) == index) {
+//       return item;
+//     }
+//   });
+
+//   return result;
+// };
+// const reslut1 = duplicate([1, 2, 2, 2, 1, 2, 3]);
+// console.log(reslut1);
+
+// let str = "hammad";
+// function name(params) {
+//   let result = params.split("").filter((item, index) => {
+//     if (params.indexOf(item) == params.lastIndexOf(item)) {
+//       return item;
+//     }
+//   });
+//   return result[0];
+// }
+// let reslut1 = name("hammad");
+// console.log(reslut1);
