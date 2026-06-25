@@ -140,3 +140,22 @@
 // }
 // let reslut1 = name("hammad");
 // console.log(reslut1);
+
+function name(arr) {
+  if (arr.length < 4) {
+    return arr;
+  }
+  let arr1 = arr.split("");
+  let arr2 = arr1.slice(-4);
+  let Array = [];
+
+  for (let i = 0; i < arr1.length - 4; i++) {
+    Array.push("*");
+  }
+  let mergeArray = Array.concat(arr2);
+
+  let removeArrayParts = mergeArray.join("");
+
+  return removeArrayParts;
+}
+console.log(name("123445678"));
