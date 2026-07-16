@@ -214,3 +214,95 @@ const leads = [
 //   return obj
 // }, {});
 // console.log(reslut1);
+
+// let sum = 0;
+// for (let i = 1; i < 5; i++) {
+//   sum = sum + i;
+// }
+// console.log(sum);
+
+// let arr = [45, 1, 2];
+
+// // 41 < 1 index = 0
+// //  1 < 2 index = 1
+// //  2 < 45 index = 2
+
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i + 1; j < arr.length; j++) {
+//     if (arr[i] > arr[j]) {
+//       // 45 bra hai 1 se , hai arr[j = 1] , next part le ker aya hai , 1 > 2 nahi bara nahi hai , wapsi 2 > 45 nahi ye bhi nahi  , 45 > 1
+//       let temp = arr[j];
+//       arr[j] = arr[i];
+//       arr[i] = temp;
+//     }
+//   }
+// }
+
+// console.log(arr);
+
+// console.log(arr);
+
+// let arr = [5, 12, 7, 3, 9];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 0) {
+//     arr[i] = 0;
+//   }
+// }
+
+// console.log(arr);
+
+// let arr = [4, 1, 9, 2];
+// let num = arr[0];
+// let minIndex;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] < num) {
+//     num = arr[i];
+//     minIndex = arr[i]
+//   }
+// }
+// arr[minIndex] = 0
+
+// console.log(arr);
+
+// let arr = [45, 100, 200, 50, 54, 1, 2];
+// let newArray = [];
+
+// for (let i = 0; i < arr.length; i++) {
+
+//   for (let j = 1; j < arr.length; j++) {
+
+//     if (arr[i] > arr[j]) {
+//       if (!newArray.includes(arr[j])) {
+//         newArray.push(arr[j]);
+//       }
+//     }
+//   }
+
+//   // Jo element abhi tak add nahi hua usko add kar do
+
+//   if (!newArray.includes(arr[i])) {
+//     newArray.push(arr[i]);
+//   }
+
+// }
+
+// console.log(newArray);
+function name(arr) {
+  let remove = "";
+  let first = arr[0];
+
+  for (let i = 0; i < first.length; i++) {
+
+    for (let j = 1; j < arr.length; j++) {
+
+      if (first[i] !== arr[j][i]) {
+        return remove;
+      }
+      
+    }
+    remove += first[i];
+  }
+  return remove;
+}
+
+console.log(name(["flower", "flow", "flight"]));
