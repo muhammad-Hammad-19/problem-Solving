@@ -287,22 +287,69 @@ const leads = [
 // }
 
 // console.log(newArray);
-function name(arr) {
-  let remove = "";
-  let first = arr[0];
 
-  for (let i = 0; i < first.length; i++) {
+// function name(arr) {
+//   let remove = "";
 
-    for (let j = 1; j < arr.length; j++) {
+//   let first = arr[0];
 
-      if (first[i] !== arr[j][i]) {
-        return remove;
-      }
-      
-    }
-    remove += first[i];
-  }
-  return remove;
-}
+//   for (let i = 0; i < first.length; i++) {
 
-console.log(name(["flower", "flow", "flight"]));
+//     for (let j = 1; j < arr.length; j++) {
+
+//       if (first[i] !== arr[j][i]) {
+//         return remove;
+//       }
+
+//     }
+//     remove += first[i];
+//   }
+//   return remove;
+// }
+
+// console.log(name(["flower", "flow", "flight"]));
+
+// let arr = [2, 7, 11, 15];
+
+// let target = 9;
+
+// // for (let i = 0; i < arr.length; i++) {
+// //   for (let j = i + 1; j < arr.length; j++) {
+// //     if (arr[i] + arr[j] == target) {
+// //       console.log([i, j]);
+// //     }
+// //   }
+// // }
+
+// //[ 0 , 1]
+
+// for(let i=0; i<arr.length; i++){
+//   for(let j=i + 1; j<arr.length; j++){
+//     if(arr[i] + arr[j] == target){
+//       console.log([i,j]);
+
+//     }
+//   }
+// }
+
+// function name(arr) {
+
+//   let k = arr[0];
+
+//   let index = 0;
+
+//   for (let i = 1; i < arr.length; i++) {
+
+//     if (arr[i] !== k) {
+
+//       index++;
+
+//       arr[index] = arr[i];
+
+//       k = arr[i];
+
+//     }
+//   }
+//   return index + 1;
+// }
+// console.log(name([1, 1, 2]));
