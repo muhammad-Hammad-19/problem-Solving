@@ -353,3 +353,27 @@ const leads = [
 //   return index + 1;
 // }
 // console.log(name([1, 1, 2]));
+
+// const findNumber = (nums, val) => {
+//   let find = 0;
+
+//   for (let j = 1; j <= val; j++) {
+//     let check = false;
+
+//     for (let i = 0; i < nums.length; i++) {
+//       if (nums[i] == j) {
+//         check = true;
+//         break;
+//       }
+//     }
+
+//     if (!check) {
+//       find = j;
+//     }
+//   }
+
+//   return find;
+// };
+// console.log(findNumber([1, 2, 3, 5], 5));
+
+// 1 == 1 , 1 == 2
