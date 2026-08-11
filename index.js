@@ -377,3 +377,24 @@ const leads = [
 // console.log(findNumber([1, 2, 3, 5], 5));
 
 // 1 == 1 , 1 == 2
+
+function name(arr) {
+  let last = 9;
+  let found = false;
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (!found) {
+      if (arr[i] == last) {
+        arr[i] = 0;
+      } else {
+        arr[i] += 1;
+        found = true;
+      }
+    }
+  }
+  if (!found) {
+    arr.unshift(1);
+  }
+  return arr;
+}
+console.log(name([1, 2, 3]));
